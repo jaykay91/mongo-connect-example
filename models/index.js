@@ -8,7 +8,7 @@ module.exports = () => {
 
     // mongodb://{USER}:{PWD}@{HOST}:{PORT}/{AUTHENTICATION_DB}
     mongoose.connect(
-      `mongodb://${process.env.DB_USER}:${process.env.DB_PWD}@localhost:27017`,
+      `mongodb://${process.env.DB_USER}:${process.env.DB_PWD}@localhost:27017/admin`,
       {
         dbName: process.env.DB_NAME
       },
